@@ -46,7 +46,7 @@ export default function HomePage() {
             <Reveal>
               <p className="inline-flex items-center gap-3 text-xs uppercase tracking-[0.28em] text-forest-700">
                 <span className="h-px w-10 bg-forest-700" />
-                Since day one · Ratlam, M.P.
+                Since day one · Ahmedabad, Gujarat
               </p>
             </Reveal>
 
@@ -269,7 +269,7 @@ export default function HomePage() {
               Ready to stock GGNF on your shelf?
             </h2>
             <p className="mx-auto mt-5 max-w-xl text-cream-100/80">
-              Call us, send a message, or visit our warehouse in Ratlam — we
+              Call us, send a message, or visit our facility in Ahmedabad — we
               respond within one working day.
             </p>
             <div className="mt-10 flex flex-wrap justify-center gap-3">

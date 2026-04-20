@@ -3,7 +3,7 @@ import { company } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: `Contact Green Gujarat Natural Fertilizer in Ratlam, M.P. Call ${company.phone} or email ${company.email}.`,
+  description: `Contact Green Gujarat Natural Fertilizer in Ahmedabad, Gujarat. Call ${company.phone} or email ${company.email}.`,
 };
 
 export default function ContactPage() {
@@ -62,7 +62,7 @@ export default function ContactPage() {
             {company.address}
           </p>
           <a
-            href="https://www.google.com/maps/search/?api=1&query=Krishi+Upaj+Mandi+Namli+Ratlam"
+            href="https://www.google.com/maps/search/?api=1&query=Bileshwar+Industrial+Estate+2+Kathwada+Road+Odhav+Ahmedabad"
             target="_blank"
             rel="noreferrer"
             className="mt-8 inline-flex items-center gap-2 rounded-full border border-cream-100/30 px-5 py-2 text-sm hover:bg-cream-50 hover:text-forest-900 transition"
@@ -76,7 +76,7 @@ export default function ContactPage() {
         <div className="overflow-hidden rounded-3xl border border-forest-200/70 bg-cream-50">
           <iframe
             title="GGNF location map"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=75.02%2C23.30%2C75.14%2C23.38&amp;layer=mapnik&amp;marker=23.3441%2C75.0760"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=72.6400%2C23.0150%2C72.6900%2C23.0550&amp;layer=mapnik&amp;marker=23.0360%2C72.6640"
             className="block h-[420px] w-full"
             loading="lazy"
           />

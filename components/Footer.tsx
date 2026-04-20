@@ -22,7 +22,7 @@ export function Footer() {
             <p className="mt-6 text-sm leading-relaxed text-cream-100/75 max-w-sm">
               Importer and marketer of water-soluble NPK fertilizers, chelated
               micronutrients, sulphur, organic manures and soil conditioners —
-              serving Indian farmers since day one from Ratlam, Madhya Pradesh.
+              serving Indian farmers since day one from Ahmedabad, Gujarat.
             </p>
           </div>
 
@@ -71,7 +71,7 @@ export function Footer() {
 
         <div className="mt-16 flex flex-col gap-3 border-t border-cream-100/15 pt-6 text-xs text-cream-100/55 md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} Green Gujarat Natural Fertilizer. All rights reserved.</p>
-          <p>For Agriculture Use Only · Made in India · Imported & Packed in Ratlam, M.P.</p>
+          <p>For Agriculture Use Only · Made in India · Imported & Packed in Ahmedabad, Gujarat</p>
         </div>
       </div>
     </footer>

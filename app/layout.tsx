@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: '%s · Green Gujarat Natural Fertilizer',
   },
   description:
-    'Green Gujarat Natural Fertilizer (GGNF) imports and markets premium water-soluble NPK, chelated micronutrients, sulphur, organic manures and soil conditioners from Ratlam, M.P.',
+    'Green Gujarat Natural Fertilizer (GGNF) imports and markets premium water-soluble NPK, chelated micronutrients, sulphur, organic manures and soil conditioners from Ahmedabad, Gujarat',
   keywords: [
     'Green Gujarat Natural Fertilizer',
     'GGNF',
@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     'Fertisol',
     'Sampurna organic manure',
     'Super Gold phosphogypsum',
-    'Ratlam fertilizer',
+    'Ahmedabad fertilizer',
     'imported fertilizer India',
   ],
   metadataBase: new URL('https://greengujaratnf.com'),
   openGraph: {
     title: 'Green Gujarat Natural Fertilizer',
     description:
-      'Premium imported water-soluble NPK, chelated micronutrients and organic fertilizers from GGNF, Ratlam.',
+      'Premium imported water-soluble NPK, chelated micronutrients and organic fertilizers from GGNF, Ahmedabad.',
     type: 'website',
   },
 };

@@ -5,7 +5,7 @@ import { company, categories } from '@/lib/data';
 export const metadata: Metadata = {
   title: 'About GGNF',
   description:
-    'About Green Gujarat Natural Fertilizer — importer and marketer of premium water-soluble NPK, chelated micronutrients, sulphur, organic manures and soil conditioners from Ratlam, M.P.',
+    'About Green Gujarat Natural Fertilizer — importer and marketer of premium water-soluble NPK, chelated micronutrients, sulphur, organic manures and soil conditioners from Ahmedabad, Gujarat.',
 };
 
 const pillars = [
@@ -16,8 +16,8 @@ const pillars = [
   },
   {
     n: '02',
-    title: 'Packed in Ratlam',
-    body: 'Packing and marketing out of our Namli warehouse in Ratlam, Madhya Pradesh.',
+    title: 'Packed in Ahmedabad',
+    body: 'Packing and marketing out of our Bileshwar Industrial Estate facility in Odhav, Ahmedabad, Gujarat.',
   },
   {
     n: '03',
@@ -42,7 +42,7 @@ export default function AboutPage() {
         <p className="mt-8 max-w-2xl text-lg text-forest-800/75">
           Green Gujarat Natural Fertilizer (GGNF) imports, markets and packs
           a focused range of high-performance fertilizers from our facility in
-          Ratlam. Three brands — <strong>Fertisol</strong>,{' '}
+          Ahmedabad, Gujarat. Three brands — <strong>Fertisol</strong>,{' '}
           <strong>Sampurna</strong> and <strong>Super Gold</strong> — together
           cover every stage of crop growth.
         </p>
