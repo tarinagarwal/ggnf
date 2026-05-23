@@ -12,7 +12,7 @@ export function Logo({ variant = 'dark' }: { variant?: 'dark' | 'light' }) {
       <span className="relative inline-flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl ring-1 ring-forest-200/70">
         <Image
           src="/brand/logo.jpg"
-          alt="Green Gujarat Natural Fertilizer"
+          alt="Green Gujarat Natural Fertilizer (GGNF) — fertilizer importer in Ahmedabad, Gujarat"
           width={96}
           height={96}
           className="h-full w-full object-cover"

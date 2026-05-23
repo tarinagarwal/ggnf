@@ -7,7 +7,8 @@ import { Logo } from './Logo';
 const links = [
   { href: '/', label: 'Home' },
   { href: '/products', label: 'Products' },
-  { href: '/categories', label: 'Categories' },
+  { href: '/guides', label: 'Crop Guides' },
+  { href: '/blog', label: 'Blog' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];

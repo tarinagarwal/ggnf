@@ -9,24 +9,43 @@ import {
   products,
   relatedProducts,
 } from '@/lib/data';
+import { getProductFaqs } from '@/lib/product-faqs';
 import { ProductCard } from '@/components/ProductCard';
 
 export function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }));
 }
 
+const SITE_URL = 'https://greengujaratnaturalfertilizer.in';
+
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const p = getProduct(params.slug);
   if (!p) return {};
+  const category = categories.find((c) => c.slug === p.category);
+  const title = `${p.name} — ${p.subtitle}`;
+  const description = `${p.name}: ${p.subtitle}. Grade ${p.grade}. ${p.benefits} Pack size ${p.packaging}.`;
+  const url = `${SITE_URL}/products/${p.slug}/`;
+  const imageUrl = `${SITE_URL}${p.image}`;
   return {
-    title: p.name,
-    description: `${p.name} — ${p.subtitle}. Grade ${p.grade}. ${p.benefits}`,
+    title,
+    description,
+    alternates: { canonical: `/products/${p.slug}` },
     openGraph: {
-      title: p.name,
-      description: p.benefits,
-      images: [p.image],
+      title: `${p.name} · ${p.brand}`,
+      description,
+      url,
+      siteName: 'Green Gujarat Natural Fertilizer',
+      images: [{ url: imageUrl, width: 1200, height: 1500, alt: `${p.name} — ${p.subtitle}` }],
       type: 'article',
+      locale: 'en_IN',
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${p.name} · ${p.brand}`,
+      description,
+      images: [imageUrl],
+    },
+    other: category ? { 'product:category': category.name } : undefined,
   };
 }
 
@@ -36,33 +55,89 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
 
   const related = relatedProducts(product.slug, 4);
   const category = categories.find((c) => c.slug === product.category);
+  const url = `${SITE_URL}/products/${product.slug}/`;
+  const imageUrl = `${SITE_URL}${product.image}`;
+  const sku = `GGNF-${String(product.id).padStart(3, '0')}`;
+  const faqs = getProductFaqs(product.slug);
 
-  const jsonLd = {
+  const productJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Product',
+    '@id': `${url}#product`,
     name: product.name,
-    brand: product.brand,
+    sku,
+    mpn: sku,
+    brand: { '@type': 'Brand', name: product.brand },
     description: product.benefits,
-    image: product.image,
+    image: [imageUrl],
+    url,
     category: category?.name,
-    manufacturer: {
-      '@type': 'Organization',
-      name: company.name,
-      address: company.address,
-      telephone: company.phone,
-      email: company.email,
+    additionalProperty: product.composition.map((c) => ({
+      '@type': 'PropertyValue',
+      name: c.label,
+      value: c.value,
+    })),
+    manufacturer: { '@id': `${SITE_URL}/#organization` },
+    offers: {
+      '@type': 'Offer',
+      url,
+      priceCurrency: 'INR',
+      availability: 'https://schema.org/InStock',
+      itemCondition: 'https://schema.org/NewCondition',
+      seller: { '@id': `${SITE_URL}/#organization` },
+      areaServed: 'IN',
     },
+  };
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+      { '@type': 'ListItem', position: 2, name: 'Products', item: `${SITE_URL}/products/` },
+      ...(category
+        ? [
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: category.name,
+              item: `${SITE_URL}/categories/${category.slug}/`,
+            },
+            { '@type': 'ListItem', position: 4, name: product.name, item: url },
+          ]
+        : [{ '@type': 'ListItem', position: 3, name: product.name, item: url }]),
+    ],
   };
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      {faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((f) => ({
+                '@type': 'Question',
+                name: f.question,
+                acceptedAnswer: { '@type': 'Answer', text: f.answer },
+              })),
+            }),
+          }}
+        />
+      )}
 
       <section className="container-x pt-10 pb-6">
-        <nav className="text-xs text-forest-800/60">
+        <nav aria-label="Breadcrumb" className="text-xs text-forest-800/60">
           <Link href="/" className="hover:text-forest-900">Home</Link>
           <span className="mx-2">/</span>
           <Link href="/products" className="hover:text-forest-900">Products</Link>
@@ -86,7 +161,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
               <div className="relative aspect-[4/5] overflow-hidden">
                 <Image
                   src={product.image}
-                  alt={product.name}
+                  alt={`${product.name} — ${product.subtitle}`}
                   fill
                   sizes="(min-width: 1024px) 50vw, 90vw"
                   priority
@@ -194,6 +269,35 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </section>
+
+      {faqs.length > 0 && (
+        <section className="bg-cream-100/60 border-y border-forest-200/60 py-20">
+          <div className="container-x">
+            <h2 className="font-display text-3xl text-forest-900 md:text-4xl">
+              Frequently asked questions
+            </h2>
+            <p className="mt-3 max-w-2xl text-forest-800/75">
+              Practical answers from our technical team on application,
+              compatibility and field use of {product.name}.
+            </p>
+            <dl className="mt-10 max-w-3xl space-y-5">
+              {faqs.map((f) => (
+                <div
+                  key={f.question}
+                  className="rounded-2xl border border-forest-200/70 bg-cream-50 p-6"
+                >
+                  <dt className="font-display text-lg text-forest-900">
+                    {f.question}
+                  </dt>
+                  <dd className="mt-3 text-forest-800/85 leading-relaxed">
+                    {f.answer}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+      )}
 
       {related.length > 0 && (
         <section className="bg-forest-50/40 border-y border-forest-200/60 py-20">

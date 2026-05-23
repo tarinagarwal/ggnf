@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { categories, company, products } from '@/lib/data';
 import { ProductCard } from '@/components/ProductCard';
 import { Reveal } from '@/components/Reveal';
+import { getRecentBlogPosts } from '@/lib/blog';
+import { cropGuides } from '@/lib/guides';
 
 const featuredSlugs = [
   'fertisol-npk-19-19-19',
@@ -34,6 +36,8 @@ const values = [
 ];
 
 export default function HomePage() {
+  const recentPosts = getRecentBlogPosts(3);
+  const recentGuides = cropGuides.slice(0, 3);
   return (
     <>
       {/* HERO */}
@@ -103,7 +107,7 @@ export default function HomePage() {
                 <div className="absolute inset-2 overflow-hidden rounded-[1.75rem] bg-cream-100">
                   <Image
                     src="/products/product_02.png"
-                    alt="Fertisol NPK 19:19:19"
+                    alt="Fertisol NPK 19:19:19 — 100% water-soluble balanced NPK fertilizer pack"
                     fill
                     priority
                     sizes="(min-width: 1024px) 40vw, 90vw"
@@ -260,8 +264,118 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* CROP GUIDES */}
+      <section className="container-x py-24 md:py-32">
+        <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+          <div>
+            <p className="text-xs uppercase tracking-[0.22em] text-forest-700">
+              Crop schedules
+            </p>
+            <h2 className="mt-3 font-display text-4xl leading-tight text-forest-900 md:text-5xl">
+              Stage-by-stage nutrition plans.
+            </h2>
+            <p className="mt-4 max-w-2xl text-forest-800/75">
+              Field-tested fertilizer schedules for India&apos;s major crops —
+              base dose, top-dress timings, fertigation programmes and
+              micronutrient corrections.
+            </p>
+          </div>
+          <Link
+            href="/guides"
+            className="inline-flex items-center gap-2 rounded-full border border-forest-200/70 px-6 py-3 text-sm font-medium text-forest-700 transition hover:bg-forest-50"
+          >
+            All crop guides <span aria-hidden>→</span>
+          </Link>
+        </div>
+        <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {recentGuides.map((g) => (
+            <Reveal key={g.slug}>
+              <Link
+                href={`/guides/${g.slug}/`}
+                className="group flex h-full flex-col overflow-hidden rounded-2xl border border-forest-200/60 bg-cream-50 transition hover:-translate-y-1 hover:border-forest-500 hover:shadow-soft"
+              >
+                <div className="relative aspect-[16/10] overflow-hidden">
+                  <Image
+                    src={g.cover}
+                    alt={`${g.crop} fertilizer schedule`}
+                    fill
+                    sizes="(min-width: 1024px) 33vw, 90vw"
+                    className="object-cover transition duration-500 group-hover:scale-[1.05]"
+                  />
+                  <span className="absolute left-4 top-4 inline-flex items-center rounded-full bg-forest-900/90 px-3 py-1 text-[10px] font-medium uppercase tracking-wider text-cream-50 backdrop-blur">
+                    {g.crop}
+                  </span>
+                </div>
+                <div className="flex flex-1 flex-col gap-2 p-6">
+                  <p className="text-[10px] uppercase tracking-widest text-forest-600">
+                    {g.season} · {g.growthDuration}
+                  </p>
+                  <h3 className="font-display text-xl leading-snug text-forest-900">
+                    {g.crop} fertilizer schedule
+                  </h3>
+                  <p className="text-sm text-forest-800/70">{g.excerpt}</p>
+                </div>
+              </Link>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* LATEST BLOG */}
+      {recentPosts.length > 0 && (
+        <section className="bg-forest-50/40 border-y border-forest-200/60 py-24 md:py-32">
+          <div className="container-x">
+            <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+              <div>
+                <p className="text-xs uppercase tracking-[0.22em] text-forest-700">
+                  From the blog
+                </p>
+                <h2 className="mt-3 font-display text-4xl leading-tight text-forest-900 md:text-5xl">
+                  Field-tested notes.
+                </h2>
+              </div>
+              <Link
+                href="/blog"
+                className="text-sm font-medium text-forest-700 hover:text-forest-900"
+              >
+                All articles →
+              </Link>
+            </div>
+            <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {recentPosts.map((p) => (
+                <Reveal key={p.slug}>
+                  <Link
+                    href={`/blog/${p.slug}/`}
+                    className="group flex h-full flex-col overflow-hidden rounded-2xl border border-forest-200/60 bg-cream-50 transition hover:-translate-y-1 hover:border-forest-500"
+                  >
+                    <div className="relative aspect-[16/10] overflow-hidden">
+                      <Image
+                        src={p.cover}
+                        alt={p.title}
+                        fill
+                        sizes="(min-width: 1024px) 33vw, 90vw"
+                        className="object-cover transition duration-500 group-hover:scale-[1.05]"
+                      />
+                    </div>
+                    <div className="flex flex-1 flex-col gap-2 p-6">
+                      <p className="text-[10px] uppercase tracking-widest text-forest-600">
+                        {p.category} · {p.readingMinutes} min
+                      </p>
+                      <h3 className="font-display text-lg leading-snug text-forest-900">
+                        {p.title}
+                      </h3>
+                      <p className="text-sm text-forest-800/70">{p.excerpt}</p>
+                    </div>
+                  </Link>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* CTA */}
-      <section className="container-x pb-24">
+      <section className="container-x pb-24 pt-24">
         <div className="relative overflow-hidden rounded-3xl bg-forest-800 px-8 py-20 text-center md:py-28">
           <div className="absolute inset-0 bg-grain opacity-30" aria-hidden />
           <div className="relative">

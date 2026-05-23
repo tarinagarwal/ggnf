@@ -17,7 +17,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 grid grid-cols-1 gap-12 md:grid-cols-12">
-          <div className="md:col-span-5">
+          <div className="md:col-span-4">
             <Logo variant="light" />
             <p className="mt-6 text-sm leading-relaxed text-cream-100/75 max-w-sm">
               Importer and marketer of water-soluble NPK fertilizers, chelated
@@ -26,7 +26,7 @@ export function Footer() {
             </p>
           </div>
 
-          <div className="md:col-span-3">
+          <div className="md:col-span-2">
             <h3 className="text-xs uppercase tracking-[0.22em] text-cream-100/55">
               Products
             </h3>
@@ -44,6 +44,34 @@ export function Footer() {
               <li>
                 <Link href="/products" className="text-cream-100/80 hover:text-cream-50 transition">
                   All products →
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="md:col-span-2">
+            <h3 className="text-xs uppercase tracking-[0.22em] text-cream-100/55">
+              Learn
+            </h3>
+            <ul className="mt-5 space-y-2 text-sm">
+              <li>
+                <Link href="/guides" className="text-cream-100/80 hover:text-cream-50 transition">
+                  Crop guides
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="text-cream-100/80 hover:text-cream-50 transition">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link href="/dealers" className="text-cream-100/80 hover:text-cream-50 transition">
+                  Find a dealer
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-cream-100/80 hover:text-cream-50 transition">
+                  About GGNF
                 </Link>
               </li>
             </ul>

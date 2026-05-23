@@ -11,7 +11,7 @@ export function ProductCard({ product, priority = false }: { product: Product; p
       <div className="relative aspect-[4/5] overflow-hidden bg-gradient-to-b from-cream-100 to-cream-50">
         <Image
           src={product.image}
-          alt={product.name}
+          alt={`${product.name} — ${product.subtitle}`}
           fill
           sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
           className="object-cover transition duration-500 group-hover:scale-[1.05]"

@@ -3,9 +3,17 @@ import Link from 'next/link';
 import { company, categories } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'About GGNF',
+  title: 'About GGNF — Fertilizer Importer & Marketer in Ahmedabad, Gujarat',
   description:
-    'About Green Gujarat Natural Fertilizer — importer and marketer of premium water-soluble NPK, chelated micronutrients, sulphur, organic manures and soil conditioners from Ahmedabad, Gujarat.',
+    'Green Gujarat Natural Fertilizer (GGNF) imports, packs and markets premium water-soluble NPK, chelated micronutrients, sulphur, organic manures and soil conditioners from Odhav, Ahmedabad — across three brands: Fertisol, Sampurna and Super Gold.',
+  alternates: { canonical: '/about' },
+  openGraph: {
+    title: 'About GGNF — Fertilizer Importer in Ahmedabad, Gujarat',
+    description:
+      'Importer and marketer of Fertisol, Sampurna and Super Gold fertilizers since day one.',
+    url: 'https://greengujaratnaturalfertilizer.in/about/',
+    type: 'website',
+  },
 };
 
 const pillars = [

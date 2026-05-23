@@ -3,9 +3,17 @@ import Link from 'next/link';
 import { categories, products } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Product Categories',
+  title: 'Product Categories — NPK, Micronutrients, Sulphur & Organic Lines',
   description:
-    'Explore all seven product categories from Green Gujarat Natural Fertilizer.',
+    'Explore all seven fertilizer categories from Green Gujarat Natural Fertilizer — water-soluble NPK, secondary nutrients, potassium, sulphur, micronutrients, chelated micros and organic specialty.',
+  alternates: { canonical: '/categories' },
+  openGraph: {
+    title: 'Product Categories · Green Gujarat Natural Fertilizer',
+    description:
+      'Seven focused fertilizer categories covering the full crop-nutrition cycle.',
+    url: 'https://greengujaratnaturalfertilizer.in/categories/',
+    type: 'website',
+  },
 };
 
 export default function CategoriesPage() {

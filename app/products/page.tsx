@@ -3,9 +3,17 @@ import { ProductsClient } from './products-client';
 import { categories, products } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'All Products',
+  title: 'All Products — Water-Soluble NPK, Chelated Micronutrients & Organic Fertilizers',
   description:
-    'Browse all 24 products from Green Gujarat Natural Fertilizer — water-soluble NPK, chelated micronutrients, sulphur, organic manures and soil conditioners.',
+    'Browse all 24 imported fertilizer products from Green Gujarat Natural Fertilizer — water-soluble NPK grades, EDTA chelated micronutrients, sulphur, organic manures and soil conditioners.',
+  alternates: { canonical: '/products' },
+  openGraph: {
+    title: 'All Products · Green Gujarat Natural Fertilizer',
+    description:
+      'Complete catalogue of 24 imported fertilizers across 7 categories.',
+    url: 'https://greengujaratnaturalfertilizer.in/products/',
+    type: 'website',
+  },
 };
 
 export default function ProductsPage() {

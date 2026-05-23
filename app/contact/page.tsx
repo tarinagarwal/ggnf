@@ -2,8 +2,15 @@ import type { Metadata } from 'next';
 import { company } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Contact',
-  description: `Contact Green Gujarat Natural Fertilizer in Ahmedabad, Gujarat. Call ${company.phone} or email ${company.email}.`,
+  title: 'Contact GGNF — Dealer Enquiries & Customer Care, Ahmedabad',
+  description: `Contact Green Gujarat Natural Fertilizer in Odhav, Ahmedabad, Gujarat. Call ${company.phone} or email ${company.email}. Dealer enquiries welcome across Gujarat, Madhya Pradesh and Maharashtra.`,
+  alternates: { canonical: '/contact' },
+  openGraph: {
+    title: 'Contact GGNF — Ahmedabad, Gujarat',
+    description: `Call ${company.phone} for dealership, bulk orders and technical queries.`,
+    url: 'https://greengujaratnaturalfertilizer.in/contact/',
+    type: 'website',
+  },
 };
 
 export default function ContactPage() {
