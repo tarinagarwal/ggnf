@@ -121,7 +121,7 @@ export const blogPosts: BlogPost[] = [
           'fertisol-npk-19-19-19',
           'fertisol-npk-13-40-13',
           'fertisol-npk-20-20-20',
-          'fertisol-npk-13-00-45',
+          'fertisol-potassium-nitrate',
         ],
       },
       { type: 'h2', text: 'Practical schedule for a vegetable crop' },
@@ -154,7 +154,7 @@ export const blogPosts: BlogPost[] = [
     relatedProductSlugs: [
       'fertisol-npk-19-19-19',
       'fertisol-npk-13-40-13',
-      'fertisol-npk-13-00-45',
+      'fertisol-potassium-nitrate',
     ],
   },
   {
@@ -260,7 +260,7 @@ export const blogPosts: BlogPost[] = [
         type: 'productRef',
         intro: 'Our EDTA-chelated micronutrient line — formulated to international purity spec:',
         slugs: [
-          'fertisol-zn-edta-12',
+          'fertisol-zn-edta',
         ],
       },
       { type: 'h2', text: 'Common mistakes' },
@@ -279,7 +279,7 @@ export const blogPosts: BlogPost[] = [
         html: 'For 80% of Indian farms, <strong>EDTA-chelated micronutrients are the right choice</strong> — cheaper, plenty stable, and dramatically better than sulphates. Reach for DTPA when your soil pH is above 7.5 or your irrigation water is hard. Save EDDHA for chronic iron chlorosis in high-value horticulture.',
       },
     ],
-    relatedProductSlugs: ['fertisol-zn-edta-12'],
+    relatedProductSlugs: ['fertisol-zn-edta'],
   },
   {
     slug: 'phosphogypsum-for-saline-alkaline-soils',

@@ -17,453 +17,643 @@
     {
       "slug": "water-soluble-npk",
       "name": "Water-Soluble NPK Fertilizers",
-      "description": "100% water-soluble mixture fertilizers for foliar and fertigation application."
+      "description": "100% water-soluble mixture and complex fertilizers for foliar and fertigation application."
     },
     {
       "slug": "secondary-nutrients",
       "name": "Secondary Nutrient Fertilizers",
-      "description": "Calcium, magnesium and sulphur-based fertilizers."
+      "description": "Calcium, magnesium and boron-based water-soluble fertilizers."
     },
     {
       "slug": "potassium-fertilizers",
       "name": "Potassium Fertilizers",
-      "description": "High-grade potash and potassium sulphate products."
+      "description": "Imported water-soluble potash and potassium-rich fertilizers."
     },
     {
       "slug": "sulphur-fertilizers",
       "name": "Sulphur Fertilizers",
-      "description": "Straight sulphur fertilizers in powder and granule form."
+      "description": "Straight sulphur fertilizers in WDG powder form."
     },
     {
       "slug": "micronutrients",
       "name": "Micro-Nutrient Fertilizers",
-      "description": "Zinc, boron, manganese and iron-based micronutrients."
+      "description": "Zinc, iron, magnesium and boron sulphate-based micronutrients."
     },
     {
       "slug": "chelated-micronutrients",
       "name": "Chelated Micro-Nutrients",
-      "description": "EDTA-chelated nutrients with superior absorption."
+      "description": "EDTA-chelated zinc, iron and calcium with superior absorption."
     },
     {
       "slug": "organic-specialty",
       "name": "Organic & Specialty Fertilizers",
-      "description": "Organic manures, soil conditioners and speciality products."
+      "description": "ISO-certified organic manures, phosphogypsum and soil conditioners."
+    },
+    {
+      "slug": "crop-protection",
+      "name": "Crop Protection",
+      "description": "Insecticides, fungicides and herbicides for integrated crop management."
     }
   ],
   "products": [
     {
       "id": 1,
-      "slug": "fertisol-npk-13-40-13",
-      "name": "Fertisol NPK 13:40:13",
-      "brand": "Fertisol",
-      "category": "water-soluble-npk",
-      "image": "/products/product_01.png",
-      "subtitle": "100% Water Soluble Mixture Fertilizer",
-      "grade": "N-13%, P₂O₅-40%, K₂O-13%",
-      "type": "Imported",
-      "packaging": "1 Kg",
-      "composition": [
-        {"label": "Total Nitrogen", "value": "13.0% min"},
-        {"label": "Water Soluble Phosphate (as P₂O₅)", "value": "40.0% min"},
-        {"label": "Water Soluble Potash (as K₂O)", "value": "13.0% min"}
-      ],
-      "benefits": "A high-phosphorus starter grade ideal for early growth, root development and flowering in horticulture and vegetable crops."
-    },
-    {
-      "id": 2,
       "slug": "fertisol-npk-19-19-19",
       "name": "Fertisol NPK 19:19:19",
       "brand": "Fertisol",
+      "productType": "water-soluble",
       "category": "water-soluble-npk",
-      "image": "/products/product_02.png",
+      "image": "/products/fertisol-npk-19-19-19.jpg",
       "subtitle": "100% Water Soluble Mixture Fertilizer",
-      "grade": "N-19%, P₂O₅-19%, K₂O-19%",
+      "grade": "N-19% P₂O₅-19% K₂O-19%",
       "type": "Imported",
-      "packaging": "1 Kg",
+      "packaging": "1 Kg / 5 Kg / 25 Kg",
       "composition": [
-        {"label": "Total Nitrogen", "value": "19.0% min"},
-        {"label": "Water Soluble Phosphate (as P₂O₅)", "value": "19.0% min"},
-        {"label": "Water Soluble Potash (as K₂O)", "value": "19.0% min"}
+        { "label": "Total Nitrogen", "value": "19.0% min" },
+        { "label": "Water Soluble Phosphate (as P₂O₅)", "value": "19.0% min" },
+        { "label": "Water Soluble Potash (as K₂O)", "value": "19.0% min" }
       ],
+      "dose": "5 g per litre (foliar) or 3–5 kg per acre (fertigation), weekly during vegetative phase.",
       "benefits": "A perfectly balanced NPK grade for vegetative growth. Universal application across all crops and growth stages."
     },
     {
-      "id": 3,
+      "id": 2,
       "slug": "fertisol-npk-20-20-20",
       "name": "Fertisol NPK 20:20:20",
       "brand": "Fertisol",
+      "productType": "water-soluble",
       "category": "water-soluble-npk",
-      "image": "/products/product_03.png",
+      "image": "/products/fertisol-npk-20-20-20.jpg",
       "subtitle": "100% Water Soluble Mixture Fertilizer",
-      "grade": "N-20%, P₂O₅-20%, K₂O-20%",
+      "grade": "N-20% P₂O₅-20% K₂O-20%",
       "type": "Imported",
-      "packaging": "1 Kg",
+      "packaging": "1 Kg / 5 Kg / 25 Kg",
       "composition": [
-        {"label": "Total Nitrogen", "value": "20.0% min"},
-        {"label": "Water Soluble Phosphate (as P₂O₅)", "value": "20.0% min"},
-        {"label": "Water Soluble Potash (as K₂O)", "value": "20.0% min"}
+        { "label": "Total Nitrogen", "value": "20.0% min" },
+        { "label": "Water Soluble Phosphate (as P₂O₅)", "value": "20.0% min" },
+        { "label": "Water Soluble Potash (as K₂O)", "value": "20.0% min" }
       ],
-      "benefits": "A fully balanced, high-analysis grade delivering premium nutrition for drip and foliar feeding."
+      "dose": "2–3 g per litre for nursery and polyhouse fertigation; 5 g per litre as foliar.",
+      "benefits": "Slightly higher concentration balanced grade — the preferred choice for nursery, polyhouse and greenhouse nutrition."
+    },
+    {
+      "id": 3,
+      "slug": "fertisol-npk-13-40-13",
+      "name": "Fertisol NPK 13:40:13",
+      "brand": "Fertisol",
+      "productType": "water-soluble",
+      "category": "water-soluble-npk",
+      "image": "/products/fertisol-npk-13-40-13.jpg",
+      "subtitle": "100% Water Soluble Mixture Fertilizer",
+      "grade": "N-13% P₂O₅-40% K₂O-13%",
+      "type": "Imported",
+      "packaging": "1 Kg / 5 Kg / 25 Kg",
+      "composition": [
+        { "label": "Total Nitrogen", "value": "13.0% min" },
+        { "label": "Water Soluble Phosphate (as P₂O₅)", "value": "40.0% min" },
+        { "label": "Water Soluble Potash (as K₂O)", "value": "13.0% min" }
+      ],
+      "dose": "5 g per litre as transplant drench; 3–4 kg per acre fertigation for first 3–4 weeks after planting.",
+      "benefits": "High phosphorus grade for early root establishment and transplanting. Drives strong taproot and tillering."
     },
     {
       "id": 4,
-      "slug": "fertisol-npk-13-00-45",
-      "name": "Fertisol NPK 13:00:45",
+      "slug": "fertisol-potassium-nitrate",
+      "name": "Fertisol Potassium Nitrate 13:00:45",
       "brand": "Fertisol",
-      "category": "water-soluble-npk",
-      "image": "/products/product_04.png",
-      "subtitle": "Potassium Nitrate — 100% Water Soluble",
-      "grade": "N-13%, K₂O-45%",
+      "productType": "water-soluble",
+      "category": "potassium-fertilizers",
+      "image": "/products/fertisol-potassium-nitrate.jpg",
+      "subtitle": "100% Water Soluble · Chloride Free",
+      "grade": "N-13% K₂O-45%",
       "type": "Imported",
-      "packaging": "1 Kg",
+      "packaging": "1 Kg / 5 Kg / 25 Kg",
       "composition": [
-        {"label": "Total Nitrogen", "value": "13.0% min"},
-        {"label": "Water Soluble Potash (as K₂O)", "value": "45.0% min"}
+        { "label": "Total Nitrogen (as Nitrate)", "value": "13.0% min" },
+        { "label": "Water Soluble Potash (as K₂O)", "value": "45.0% min" }
       ],
-      "benefits": "Ideal during fruit-development and maturity stages. Improves size, colour, sugar content and shelf life."
+      "dose": "5 g per litre foliar from flowering through harvest; 3 kg per acre weekly fertigation.",
+      "benefits": "Chloride-free potassium nitrate for flowering, fruit set and grain fill. Essential for grape, pomegranate, tomato, mango and citrus."
     },
     {
       "id": 5,
-      "slug": "fertisol-npk-00-52-34",
-      "name": "Fertisol NPK 00:52:34",
+      "slug": "fertisol-mono-potassium-phosphate",
+      "name": "Fertisol Mono Potassium Phosphate 00:52:34",
       "brand": "Fertisol",
+      "productType": "water-soluble",
       "category": "water-soluble-npk",
-      "image": "/products/product_05.png",
-      "subtitle": "Mono Potassium Phosphate — 100% Water Soluble",
-      "grade": "P₂O₅-52%, K₂O-34%",
+      "image": "/products/fertisol-mono-potassium-phosphate.jpg",
+      "subtitle": "Water Soluble Complex Fertilizer",
+      "grade": "P₂O₅-52% K₂O-34%",
       "type": "Imported",
-      "packaging": "1 Kg",
+      "packaging": "1 Kg / 5 Kg / 25 Kg",
       "composition": [
-        {"label": "Water Soluble Phosphate (as P₂O₅)", "value": "52.0% min"},
-        {"label": "Water Soluble Potash (as K₂O)", "value": "34.0% min"}
+        { "label": "Water Soluble Phosphate (as P₂O₅)", "value": "52.0% min" },
+        { "label": "Water Soluble Potash (as K₂O)", "value": "34.0% min" }
       ],
-      "benefits": "Stimulates flowering and fruit-set with chloride-free phosphorus and potassium."
+      "dose": "5 g per litre foliar pre-flowering; 3 kg per acre fertigation.",
+      "benefits": "Nitrogen-free P+K grade for pre-flowering hardening and fruit colour development. Use when nitrogen is in excess."
     },
     {
       "id": 6,
-      "slug": "fertisol-npk-12-61-00",
-      "name": "Fertisol NPK 12:61:00",
+      "slug": "fertisol-mono-ammonium-phosphate",
+      "name": "Fertisol Mono Ammonium Phosphate 12:61:00",
       "brand": "Fertisol",
+      "productType": "water-soluble",
       "category": "water-soluble-npk",
-      "image": "/products/product_06.png",
-      "subtitle": "Mono Ammonium Phosphate — 100% Water Soluble",
-      "grade": "N-12%, P₂O₅-61%",
+      "image": "/products/fertisol-mono-ammonium-phosphate.jpg",
+      "subtitle": "Water Soluble Complex Fertilizer",
+      "grade": "N-12% P₂O₅-61%",
       "type": "Imported",
-      "packaging": "1 Kg",
+      "packaging": "1 Kg / 5 Kg / 25 Kg",
       "composition": [
-        {"label": "Total Nitrogen", "value": "12.0% min"},
-        {"label": "Water Soluble Phosphate (as P₂O₅)", "value": "61.0% min"}
+        { "label": "Total Nitrogen", "value": "12.0% min" },
+        { "label": "Water Soluble Phosphate (as P₂O₅)", "value": "61.0% min" }
       ],
-      "benefits": "High-phosphorus grade for vigorous root establishment. Perfect for starter applications and transplanting."
+      "dose": "3–5 kg per acre fertigation during early vegetative stage; 4–5 g per litre as foliar.",
+      "benefits": "Highest-phosphorus water-soluble grade. Drives early root development and is the standard MAP for fertigation systems."
     },
     {
       "id": 7,
       "slug": "fertisol-calcium-nitrate",
       "name": "Fertisol Calcium Nitrate",
       "brand": "Fertisol",
+      "productType": "water-soluble",
       "category": "secondary-nutrients",
-      "image": "/products/product_07.png",
+      "image": "/products/fertisol-calcium-nitrate.jpg",
       "subtitle": "100% Water Soluble Complex Fertilizer",
-      "grade": "Ca-18.5%, N-15.5%",
+      "grade": "Ca-18.5% N-15.5%",
       "type": "Imported",
-      "packaging": "1 Kg",
+      "packaging": "1 Kg / 5 Kg / 25 Kg",
       "composition": [
-        {"label": "Total Nitrogen", "value": "15.5% min"},
-        {"label": "Water Soluble Calcium (as Ca)", "value": "18.5% min"}
+        { "label": "Calcium (as Ca)", "value": "18.5% min" },
+        { "label": "Total Nitrogen (as Nitrate)", "value": "15.5% min" }
       ],
-      "benefits": "Prevents blossom-end rot and tip-burn. Strengthens cell walls and improves produce quality and storage life."
+      "dose": "2–3 g per litre foliar every 10–15 days from flowering; 5–10 kg per acre via fertigation.",
+      "benefits": "Dual calcium + nitrate nitrogen source. Prevents blossom-end rot in tomato, tipburn in lettuce and improves fruit firmness."
     },
     {
       "id": 8,
-      "slug": "fertisol-magnesium-sulphate",
-      "name": "Fertisol Magnesium Sulphate",
-      "brand": "Fertisol",
-      "category": "secondary-nutrients",
-      "image": "/products/product_08.png",
-      "subtitle": "Water Soluble Secondary Nutrient",
-      "grade": "Mg-9.6%, S-12%",
-      "type": "Imported",
-      "packaging": "1 Kg",
-      "composition": [
-        {"label": "Magnesium (as Mg)", "value": "9.6% min"},
-        {"label": "Sulphur (as S)", "value": "12.0% min"}
-      ],
-      "benefits": "Corrects magnesium deficiency and boosts chlorophyll synthesis, leading to greener, healthier foliage."
-    },
-    {
-      "id": 9,
-      "slug": "fertisol-npk-00-00-50",
-      "name": "Fertisol NPK 00:00:50",
-      "brand": "Fertisol",
-      "category": "potassium-fertilizers",
-      "image": "/products/product_09.png",
-      "subtitle": "Potassium Sulphate — 100% Water Soluble",
-      "grade": "K₂O-50%, S-17.5%",
-      "type": "Imported",
-      "packaging": "1 Kg",
-      "composition": [
-        {"label": "Water Soluble Potash (as K₂O)", "value": "50.0% min"},
-        {"label": "Sulphur (as S)", "value": "17.5% min"}
-      ],
-      "benefits": "Chloride-free potash ideal for quality-sensitive crops like grapes, tobacco and potato."
-    },
-    {
-      "id": 10,
-      "slug": "fertisol-npk-00-00-23",
-      "name": "Fertisol NPK 00:00:23",
-      "brand": "Fertisol",
-      "category": "potassium-fertilizers",
-      "image": "/products/product_10.png",
-      "subtitle": "Potassium Schoenite — Double Sulphate of Potash & Magnesium",
-      "grade": "K₂O-23%, Mg-11%, S-22%",
-      "type": "Imported",
-      "packaging": "1 Kg",
-      "composition": [
-        {"label": "Water Soluble Potash (as K₂O)", "value": "23.0% min"},
-        {"label": "Magnesium (as Mg)", "value": "11.0% min"},
-        {"label": "Sulphur (as S)", "value": "22.0% min"}
-      ],
-      "benefits": "Triple nutrition — potash, magnesium and sulphur in a chloride-free, water-soluble form."
-    },
-    {
-      "id": 11,
       "slug": "fertisol-calcium-nitrate-boron",
       "name": "Fertisol Calcium Nitrate with Boron",
       "brand": "Fertisol",
+      "productType": "water-soluble",
       "category": "secondary-nutrients",
-      "image": "/products/product_11.png",
-      "subtitle": "Fortified Fertilizer",
-      "grade": "N-14.5%, Ca-17%, B-0.3%",
+      "image": "/products/fertisol-calcium-nitrate-boron.jpg",
+      "subtitle": "Fortified Water Soluble Fertilizer",
+      "grade": "N-14.5% Ca-17.0% B-0.3%",
       "type": "Imported",
-      "packaging": "1 Kg",
+      "packaging": "1 Kg / 5 Kg / 25 Kg",
       "composition": [
-        {"label": "Total Nitrogen", "value": "15.5% min"},
-        {"label": "Water Soluble Calcium (as Ca)", "value": "17.0% min"},
-        {"label": "Boron (as B)", "value": "0.3% min"}
+        { "label": "Total Nitrogen (as Nitrate)", "value": "14.5% min" },
+        { "label": "Calcium (as Ca)", "value": "17.0% min" },
+        { "label": "Boron (as B)", "value": "0.3% min" }
       ],
-      "benefits": "Combines calcium and boron for superior flower-set, pollination and rind-strength in fruits and vegetables."
+      "dose": "2–3 g per litre foliar every 10–15 days from flowering through fruit set.",
+      "benefits": "Calcium nitrate fortified with boron — improves pollen viability, fruit set and prevents cracking. Standard for apple, grape, pomegranate and capsicum."
+    },
+    {
+      "id": 9,
+      "slug": "fertisol-potassium-sulphate",
+      "name": "Fertisol Potassium Sulphate 00:00:50",
+      "brand": "Fertisol",
+      "productType": "water-soluble",
+      "category": "potassium-fertilizers",
+      "image": "/products/fertisol-potassium-sulphate.jpg",
+      "subtitle": "100% Water Soluble Straight Potassic Fertilizer",
+      "grade": "K₂O-50% S-17.5%",
+      "type": "Imported",
+      "packaging": "1 Kg / 5 Kg / 25 Kg",
+      "composition": [
+        { "label": "Water Soluble Potash (as K₂O)", "value": "50.0% min" },
+        { "label": "Sulphur (as S)", "value": "17.5% min" }
+      ],
+      "dose": "3 kg per acre weekly fertigation pre-harvest; 5 g per litre foliar.",
+      "benefits": "Chloride-free potassium for chloride-sensitive crops. The standard K source for grape, tobacco, citrus, mango and most vegetables."
+    },
+    {
+      "id": 10,
+      "slug": "fertisol-potassium-schoenite",
+      "name": "Fertisol Potassium Schoenite 00:00:23",
+      "brand": "Fertisol",
+      "productType": "water-soluble",
+      "category": "potassium-fertilizers",
+      "image": "/products/fertisol-potassium-schoenite.jpg",
+      "subtitle": "100% Water Soluble Straight Potassic Fertilizer",
+      "grade": "K₂O-23% Mg-11% S-22%",
+      "type": "Imported",
+      "packaging": "1 Kg / 5 Kg / 25 Kg",
+      "composition": [
+        { "label": "Water Soluble Potash (as K₂O)", "value": "23.0% min" },
+        { "label": "Magnesium (as Mg)", "value": "11.0% min" },
+        { "label": "Sulphur (as S)", "value": "22.0% min" }
+      ],
+      "dose": "5 g per litre foliar; 5 kg per acre soil application.",
+      "benefits": "Triple-action potassium + magnesium + sulphur. Single-product correction for the three most-deficient nutrients in fruit and vegetable crops."
+    },
+    {
+      "id": 11,
+      "slug": "fertisol-magnesium",
+      "name": "Fertisol Magnesium 9.50%",
+      "brand": "Fertisol",
+      "productType": "water-soluble",
+      "category": "secondary-nutrients",
+      "image": "/products/fertisol-magnesium.jpg",
+      "subtitle": "Magnesium Sulphate Tetrahydrate",
+      "grade": "Mg-9.5%",
+      "type": "Imported",
+      "packaging": "1 Kg / 5 Kg / 25 Kg",
+      "composition": [
+        { "label": "Magnesium (as Mg)", "value": "9.5% min" }
+      ],
+      "dose": "5 g per litre foliar; 10–15 kg per acre soil application.",
+      "benefits": "Corrects inter-veinal yellowing on older leaves — classic magnesium deficiency seen across vegetables, fruit crops and cereals on sandy soils."
     },
     {
       "id": 12,
-      "slug": "fertisol-sulphur-90-wdg-powder",
-      "name": "Fertisol Sulphur 90% WDG Powder",
+      "slug": "fertisol-sulphur-90-wdg",
+      "name": "Fertisol Sulphur 90% WDG",
       "brand": "Fertisol",
+      "productType": "water-soluble",
       "category": "sulphur-fertilizers",
-      "image": "/products/product_12.png",
-      "subtitle": "Straight Sulphur Fertilizer — Powder Form",
-      "grade": "Elemental Sulphur 90%",
+      "image": "/products/fertisol-sulphur-90-wdg.jpg",
+      "subtitle": "Wettable Dispersible Granule",
+      "grade": "S-90%",
       "type": "Imported",
-      "packaging": "1 Kg",
+      "packaging": "1 Kg / 5 Kg / 25 Kg",
       "composition": [
-        {"label": "Elemental Sulphur", "value": "90% min"}
+        { "label": "Sulphur (as elemental S)", "value": "90.0% min" }
       ],
-      "benefits": "Highly dispersible WDG powder. Corrects sulphur deficiency, improves oil content and protein in crops."
+      "dose": "5–10 kg per acre as base application; 3 g per litre foliar.",
+      "benefits": "Highest-grade elemental sulphur in WDG form — dissolves cleanly for foliar use. Critical for oilseed, pulse and allium crops."
     },
     {
       "id": 13,
-      "slug": "fertisol-sulphur-90-wdg-granule",
-      "name": "Fertisol Sulphur 90% WDG Granule",
+      "slug": "fertisol-zn-edta",
+      "name": "Fertisol Zinc EDTA 12%",
       "brand": "Fertisol",
-      "category": "sulphur-fertilizers",
-      "image": "/products/product_13.png",
-      "subtitle": "Straight Sulphur Fertilizer — Granule Form",
-      "grade": "Elemental Sulphur 90%",
+      "productType": "water-soluble",
+      "category": "chelated-micronutrients",
+      "image": "/products/fertisol-zn-edta.jpg",
+      "subtitle": "Chelated Micro Nutrient Fertilizer",
+      "grade": "Zn (as EDTA) 12%",
       "type": "Imported",
-      "packaging": "1 Kg",
+      "packaging": "250 g / 500 g / 1 Kg",
       "composition": [
-        {"label": "Elemental Sulphur", "value": "90% min"}
+        { "label": "Zinc (as Zn-EDTA)", "value": "12.0% min" }
       ],
-      "benefits": "Easy-to-apply granules for soil application. Long-lasting sulphur release for oilseeds and pulses."
+      "dose": "0.5–1 g per litre foliar; 0.5–1 kg per acre fertigation.",
+      "benefits": "EDTA chelation keeps zinc available even in mildly alkaline soil. Essential for paddy, wheat, cotton, sugarcane and citrus."
     },
     {
       "id": 14,
-      "slug": "fertisol-zinc-39-5-sc",
-      "name": "Fertisol Zinc 39.5% SC",
+      "slug": "fertisol-fe-edta",
+      "name": "Fertisol Iron EDTA 12%",
       "brand": "Fertisol",
-      "category": "micronutrients",
-      "image": "/products/product_14.png",
-      "subtitle": "Micro Nutrient Fertilizer — Liquid SC Formulation",
-      "grade": "Zn-39.5%",
+      "productType": "water-soluble",
+      "category": "chelated-micronutrients",
+      "image": "/products/fertisol-fe-edta.jpg",
+      "subtitle": "Chelated Micro Nutrient Fertilizer",
+      "grade": "Fe (as EDTA) 12%",
       "type": "Imported",
-      "packaging": "1 Litre",
+      "packaging": "250 g / 500 g / 1 Kg",
       "composition": [
-        {"label": "Zinc (as Zn)", "value": "39.5% w/w"},
-        {"label": "pH (5% solution)", "value": "Min. 9.0 ±1"}
+        { "label": "Iron (as Fe-EDTA)", "value": "12.0% min" }
       ],
-      "benefits": "Dense liquid zinc SC. Chloride-free, compatible with most agrochemicals, boosts chloroplast and enzyme production."
+      "dose": "0.5–1 g per litre foliar; 0.5–1 kg per acre fertigation.",
+      "benefits": "Corrects iron deficiency chlorosis on neutral to mildly alkaline soils. Visible greening of new leaves within 3–5 days of foliar application."
     },
     {
       "id": 15,
-      "slug": "fertisol-zn-edta-12",
-      "name": "Fertisol Zn EDTA 12%",
+      "slug": "fertisol-calcium-edta",
+      "name": "Fertisol Calcium EDTA 12%",
       "brand": "Fertisol",
+      "productType": "water-soluble",
       "category": "chelated-micronutrients",
-      "image": "/products/product_15.png",
+      "image": "/products/fertisol-calcium-edta.jpg",
       "subtitle": "Chelated Micro Nutrient Fertilizer",
-      "grade": "Zinc (as Zn EDTA) 12%",
+      "grade": "Ca (as EDTA) 12%",
       "type": "Imported",
-      "packaging": "1 Kg",
+      "packaging": "250 g / 500 g / 1 Kg",
       "composition": [
-        {"label": "Zinc Chelated (as Zn EDTA)", "value": "12% w/w"}
+        { "label": "Calcium (as Ca-EDTA)", "value": "12.0% min" }
       ],
-      "dose": "Foliar: 1g/L water · Soil: 500g–1kg / acre",
-      "benefits": "Prevents and corrects zinc deficiency. Supports formation of indole-acetic acid and overall plant vigour."
+      "dose": "0.5–1 g per litre foliar from flowering through fruit fill.",
+      "benefits": "Chelated calcium for direct fruit and leaf absorption — prevents blossom-end rot, tipburn and improves fruit storage life."
     },
     {
       "id": 16,
-      "slug": "fertisol-fe-edta-12",
-      "name": "Fertisol Fe EDTA 12%",
-      "brand": "Fertisol",
-      "category": "chelated-micronutrients",
-      "image": "/products/product_16.png",
-      "subtitle": "Chelated Micro Nutrient Fertilizer",
-      "grade": "Ferrous (as Fe EDTA) 12%",
-      "type": "Imported",
-      "packaging": "1 Kg",
-      "composition": [
-        {"label": "Ferrous Chelate (as Fe EDTA)", "value": "12% w/w"}
-      ],
-      "dose": "Foliar: 1g/L · Soil: 300–400g / acre · Seed treatment: 2–3g/kg seed",
-      "benefits": "Rapidly corrects iron deficiency, improves fruit-set and helps plants endure environmental stress."
-    },
-    {
-      "id": 17,
       "slug": "fertisol-boron-20",
       "name": "Fertisol Boron 20%",
       "brand": "Fertisol",
+      "productType": "water-soluble",
       "category": "micronutrients",
-      "image": "/products/product_17.png",
-      "subtitle": "Micro Nutrient Fertilizer — Di-Sodium Octa Borate Tetra Hydrate",
-      "grade": "Boron (as B) 20% min",
+      "image": "/products/fertisol-boron-20.jpg",
+      "subtitle": "Di-Sodium Octa-Borate Tetrahydrate",
+      "grade": "B-20%",
       "type": "Imported",
-      "packaging": "1 Kg",
+      "packaging": "250 g / 500 g / 1 Kg",
       "composition": [
-        {"label": "Boron (as B)", "value": "20.0% min"}
+        { "label": "Boron (as B)", "value": "20.0% min" }
       ],
-      "benefits": "Essential for pollination, flowering and fruit-set. Corrects boron deficiency symptoms quickly."
+      "dose": "0.5–1 g per litre foliar at squaring and flowering.",
+      "benefits": "High-concentration boron for pollen viability, fruit set and seed development. Critical for cotton, oilseed, pulse, garlic and onion crops."
+    },
+    {
+      "id": 17,
+      "slug": "fertisol-zinc-sulphate",
+      "name": "Fertisol Zinc Sulphate Monohydrate 35%",
+      "brand": "Fertisol",
+      "productType": "water-soluble",
+      "category": "micronutrients",
+      "image": "/products/fertisol-zinc-sulphate.jpg",
+      "subtitle": "Micro Nutrient Fertilizer",
+      "grade": "Zn-35%",
+      "type": "Imported",
+      "packaging": "1 Kg / 5 Kg / 25 Kg",
+      "composition": [
+        { "label": "Zinc (as Zn)", "value": "35.0% min" }
+      ],
+      "dose": "20–25 kg per acre base application; 2 g per litre foliar.",
+      "benefits": "High-purity zinc sulphate for soil base application. Standard correction for zinc-deficient paddy, wheat and maize fields."
     },
     {
       "id": 18,
-      "slug": "fertisol-zinc-sulphate-monohydrate",
-      "name": "Fertisol Zinc Sulphate Monohydrate 33%",
+      "slug": "fertisol-magnesium-sulphate",
+      "name": "Fertisol Magnesium Sulphate 30.5%",
       "brand": "Fertisol",
+      "productType": "water-soluble",
       "category": "micronutrients",
-      "image": "/products/product_18.png",
-      "subtitle": "Micro Nutrient Fertilizer (ZnSO₄·H₂O)",
-      "grade": "Zn-33%+, S-15%",
+      "image": "/products/fertisol-magnesium-sulphate.jpg",
+      "subtitle": "Micro Nutrient Fertilizer",
+      "grade": "Mg-30.5%",
       "type": "Imported",
-      "packaging": "1 Kg",
+      "packaging": "1 Kg / 5 Kg / 25 Kg",
       "composition": [
-        {"label": "Zinc (as Zn)", "value": "33% min"},
-        {"label": "Sulphur (as S)", "value": "15% min"}
+        { "label": "Magnesium Sulphate (as MgSO₄)", "value": "30.5% min" }
       ],
-      "benefits": "High-concentration zinc with sulphur support. Corrects zinc deficiency for better tillering and grain quality."
+      "dose": "10–15 kg per acre soil; 5 g per litre foliar.",
+      "benefits": "Soluble magnesium for mid-season correction. Restores chlorophyll on inter-veinally yellowed leaves within a week."
     },
     {
       "id": 19,
-      "slug": "fertisol-zinc-sulphate-heptahydrate",
-      "name": "Fertisol Zinc Sulphate Heptahydrate 21%",
+      "slug": "fertisol-ferrous-sulphate",
+      "name": "Fertisol Ferrous Sulphate 19%",
       "brand": "Fertisol",
+      "productType": "water-soluble",
       "category": "micronutrients",
-      "image": "/products/product_19.png",
-      "subtitle": "Micro Nutrient Fertilizer (ZnSO₄·7H₂O)",
-      "grade": "Zn-21%",
+      "image": "/products/fertisol-ferrous-sulphate.jpg",
+      "subtitle": "Micro Nutrient Fertilizer",
+      "grade": "Fe-19%",
       "type": "Imported",
-      "packaging": "1 Kg",
+      "packaging": "1 Kg / 5 Kg / 25 Kg",
       "composition": [
-        {"label": "Zinc (as Zn)", "value": "21% min"}
+        { "label": "Iron (as FeSO₄·7H₂O)", "value": "19.0% min" }
       ],
-      "benefits": "Traditional hydrated zinc sulphate for soil and foliar application across all major crops."
+      "dose": "10 kg per acre soil; 3 g per litre foliar.",
+      "benefits": "Conventional ferrous sulphate for iron correction on acidic to neutral soils. Cheaper alternative to chelated iron for non-alkaline fields."
     },
     {
       "id": 20,
-      "slug": "fertisol-manganese-sulphate",
-      "name": "Fertisol Manganese Sulphate 30.5%",
-      "brand": "Fertisol",
-      "category": "micronutrients",
-      "image": "/products/product_20.png",
-      "subtitle": "Micro Nutrient Fertilizer",
-      "grade": "Mn-30.5%",
-      "type": "Imported",
-      "packaging": "1 Kg",
+      "slug": "sampurna-organic-base",
+      "name": "Sampurna Organic Manure (Base Grade)",
+      "brand": "Sampurna",
+      "productType": "organic",
+      "category": "organic-specialty",
+      "image": "/products/sampurna-organic-base.jpg",
+      "subtitle": "ISO 9001:2015 Certified Organic Manure",
+      "grade": "N-0.5% P-0.8% K-0.5% · OC 14%",
+      "type": "Organic",
+      "packaging": "25 Kg / 50 Kg",
       "composition": [
-        {"label": "Manganese (as Mn)", "value": "30.5% min"}
+        { "label": "Total Organic Carbon", "value": "14% min" },
+        { "label": "Total Nitrogen", "value": "0.5% min" },
+        { "label": "Total Phosphate (as P₂O₅)", "value": "0.8% min" },
+        { "label": "Total Potash (as K₂O)", "value": "0.5% min" },
+        { "label": "C:N Ratio", "value": "20.1" },
+        { "label": "Moisture", "value": "≤ 25%" }
       ],
-      "benefits": "Activates key enzymes, aids photosynthesis and nitrogen metabolism. Ideal for cereals, pulses and oilseeds."
+      "dose": "500 kg to 1 tonne per acre, broadcast and incorporated 2–3 weeks before sowing.",
+      "benefits": "ISO-certified organic manure rich in organic carbon — builds long-term soil fertility, improves water-holding capacity and microbial life."
     },
     {
       "id": 21,
-      "slug": "fertisol-ferrous-sulphate-19",
-      "name": "Fertisol Ferrous Sulphate 19%",
-      "brand": "Fertisol",
-      "category": "micronutrients",
-      "image": "/products/product_21.png",
-      "subtitle": "Micro Nutrient Fertilizer (FeSO₄·7H₂O)",
-      "grade": "Fe-19%",
-      "type": "Imported",
-      "packaging": "1 Kg",
+      "slug": "sampurna-organic-20-10-10",
+      "name": "Sampurna Organic 20:10:10",
+      "brand": "Sampurna",
+      "productType": "organic",
+      "category": "organic-specialty",
+      "image": "/products/sampurna-organic-20-10-10.jpg",
+      "subtitle": "ISO 9001:2015 Certified Fortified Organic",
+      "grade": "N-20% P-10% K-10%",
+      "type": "Organic Fortified",
+      "packaging": "25 Kg / 50 Kg",
       "composition": [
-        {"label": "Ferrous (as Fe)", "value": "19% min"}
+        { "label": "Total Nitrogen", "value": "20.0% min" },
+        { "label": "Total Phosphate (as P₂O₄)", "value": "10.0% min" },
+        { "label": "Water Soluble Phosphate (as P₂O₅)", "value": "8.5% min" },
+        { "label": "Water Soluble Potash (as K₂O)", "value": "10.0% min" }
       ],
-      "benefits": "Corrects iron deficiency and yellowing of leaves. Essential for chlorophyll formation."
+      "dose": "100–200 kg per acre as base dose; supplements urea + DAP.",
+      "benefits": "High-nitrogen organic-fortified grade — replaces part of conventional urea requirement while improving soil organic carbon."
     },
     {
       "id": 22,
-      "slug": "fertisol-calcium-edta-12",
-      "name": "Fertisol Calcium EDTA 12%",
-      "brand": "Fertisol",
-      "category": "chelated-micronutrients",
-      "image": "/products/product_22.png",
-      "subtitle": "Chelated Micronutrient Fertilizer",
-      "grade": "Ca (as Ca-EDTA) 12%",
-      "type": "Imported",
-      "packaging": "1 Kg",
+      "slug": "sampurna-organic-20-20-00",
+      "name": "Sampurna Organic 20:20:00",
+      "brand": "Sampurna",
+      "productType": "organic",
+      "category": "organic-specialty",
+      "image": "/products/sampurna-organic-20-20-00.jpg",
+      "subtitle": "ISO 9001:2015 Certified Fortified Organic",
+      "grade": "N-20% P-20% K-0%",
+      "type": "Organic Fortified",
+      "packaging": "25 Kg / 50 Kg",
       "composition": [
-        {"label": "Calcium (as Ca-EDTA)", "value": "12% min"},
-        {"label": "pH", "value": "5.5 – 6.5"}
+        { "label": "Total Nitrogen", "value": "20.0% min" },
+        { "label": "Total Phosphate (as P₂O₄)", "value": "20.0% min" },
+        { "label": "Water Soluble Phosphate (as P₂O₅)", "value": "20.0% min" }
       ],
-      "dose": "10 g / pump or 100 g / acre",
-      "benefits": "Highly effective lignosulphonate chelating agent. Superior absorption with rain-fast properties; strengthens cell walls."
+      "dose": "100–200 kg per acre as base dose at sowing.",
+      "benefits": "Balanced N+P organic-fortified grade. Replaces DAP + urea combination while adding organic carbon to the soil."
     },
     {
       "id": 23,
-      "slug": "sampurna-organic-manure",
-      "name": "Sampurna Organic Manure",
+      "slug": "sampurna-organic-12-32-06",
+      "name": "Sampurna Organic 12:32:06",
       "brand": "Sampurna",
+      "productType": "organic",
       "category": "organic-specialty",
-      "image": "/products/sampurna_organic_manure.jpg",
-      "subtitle": "Organic Manure · Indian Company Made",
-      "grade": "N-0.8%, P-0.4%, K-0.3% · Total Organic Carbon 14%",
-      "type": "Agri-Stack 2015 Certified",
-      "packaging": "50 Kg",
+      "image": "/products/sampurna-organic-12-32-06.jpg",
+      "subtitle": "ISO 9001:2015 Certified Fortified Organic",
+      "grade": "N-12% P-32% K-6%",
+      "type": "Organic Fortified",
+      "packaging": "25 Kg / 50 Kg",
       "composition": [
-        {"label": "Total Nitrogen (N)", "value": "0.8%"},
-        {"label": "Phosphate (P)", "value": "0.4%"},
-        {"label": "Potash (K)", "value": "0.3%"},
-        {"label": "Total Organic Carbon", "value": "14%"},
-        {"label": "Moisture", "value": "20%"},
-        {"label": "C:N Ratio", "value": "20:1"}
+        { "label": "Total Nitrogen", "value": "12.0% min" },
+        { "label": "Total Phosphate (as P₂O₄)", "value": "32.0% min" },
+        { "label": "Water Soluble Phosphate (as P₂O₅)", "value": "32.0% min" },
+        { "label": "Water Soluble Potash (as K₂O)", "value": "6.0% min" }
       ],
-      "benefits": "Farmers' all-in-one organic feed (Kisano ko karta awas, Sampurna khad). Improves soil health, moisture retention and microbial activity."
+      "dose": "75–150 kg per acre at sowing or transplanting.",
+      "benefits": "High-phosphorus organic grade — drives early root growth and establishment for transplanted vegetables, sugarcane and fruit crops."
     },
     {
       "id": 24,
       "slug": "super-gold-phosphogypsum",
       "name": "Super Gold Phosphogypsum",
       "brand": "Super Gold",
+      "productType": "organic",
       "category": "organic-specialty",
-      "image": "/products/super_gold_phosphogypsum.jpg",
-      "subtitle": "Calcium, Sulphur Enriched with Magnesium & Phosphorus · Soil Conditioner",
-      "grade": "Ca-19.6%, S-14.5%, Mg-0.12%, P-0.5%",
+      "image": "/products/super-gold-phosphogypsum.jpg",
+      "subtitle": "Ca + S + Mg + P Soil Conditioner",
+      "grade": "Ca · S · Mg · P enriched",
       "type": "Soil Conditioner",
       "packaging": "50 Kg",
       "composition": [
-        {"label": "Net Weight", "value": "50.000 kg"},
-        {"label": "Gross Weight", "value": "50.100 kg"},
-        {"label": "Moisture", "value": "≤25%"},
-        {"label": "pH", "value": "6.0 – 8.5"}
+        { "label": "Calcium (as Ca)", "value": "23% min" },
+        { "label": "Sulphur (as S)", "value": "18% min" },
+        { "label": "Magnesium (as Mg)", "value": "0.5% min" },
+        { "label": "Phosphorus (as P)", "value": "1.0% min" }
       ],
-      "benefits": "Reclaims saline and alkali soils. Supplies calcium, sulphur, magnesium and phosphorus in one balanced conditioner."
+      "dose": "200–800 kg per acre depending on soil ESP. Apply 15–20 days before sowing and incorporate.",
+      "benefits": "Reclaims sodic, saline and alkaline soils. Replaces sodium with calcium on clay exchange sites, restoring soil structure and water infiltration."
+    },
+    {
+      "id": 25,
+      "slug": "super-gold-6-in-one",
+      "name": "Super Gold 6-in-One Soil Conditioner",
+      "brand": "Super Gold",
+      "productType": "organic",
+      "category": "organic-specialty",
+      "image": "/products/super-gold-6-in-one.jpg",
+      "subtitle": "Ca + Mg + S + Zn + B + P enriched",
+      "grade": "6-in-One fortified",
+      "type": "Soil Conditioner",
+      "packaging": "50 Kg",
+      "composition": [
+        { "label": "Calcium (as Ca)", "value": "22% min" },
+        { "label": "Magnesium (as Mg)", "value": "1.5% min" },
+        { "label": "Sulphur (as S)", "value": "17% min" },
+        { "label": "Zinc (as Zn)", "value": "0.5% min" },
+        { "label": "Boron (as B)", "value": "0.2% min" },
+        { "label": "Phosphorus (as P)", "value": "1.0% min" }
+      ],
+      "dose": "200–500 kg per acre, broadcast and incorporated before sowing.",
+      "benefits": "Six-nutrient soil conditioner — addresses calcium, sulphur, magnesium, zinc and boron together. Ideal for vegetable, fruit and oilseed acreage."
+    },
+    {
+      "id": 26,
+      "slug": "super-gold-phosphogypsum-mini",
+      "name": "Super Gold Phosphogypsum (Trial Pack)",
+      "brand": "Super Gold",
+      "productType": "organic",
+      "category": "organic-specialty",
+      "image": "/products/super-gold-phosphogypsum-mini.jpg",
+      "subtitle": "Trial / Small-Acreage Soil Conditioner",
+      "grade": "Ca + S + Mg + P",
+      "type": "Soil Conditioner",
+      "packaging": "50 Kg",
+      "composition": [
+        { "label": "Calcium (as Ca)", "value": "23% min" },
+        { "label": "Sulphur (as S)", "value": "18% min" },
+        { "label": "Magnesium (as Mg)", "value": "0.5% min" },
+        { "label": "Phosphorus (as P)", "value": "1.0% min" }
+      ],
+      "dose": "100–200 kg per acre for maintenance or trial application.",
+      "benefits": "Smaller-value pack of the Super Gold phosphogypsum line — ideal for trial application or maintenance dose on already-reclaimed fields."
+    },
+    {
+      "id": 27,
+      "slug": "ggnf-esser",
+      "name": "GGNF ESSER (Imazethapyr 10% SL)",
+      "brand": "GGNF",
+      "productType": "pesticides",
+      "category": "crop-protection",
+      "image": "/products/ggnf-esser.jpg",
+      "subtitle": "Selective Post-Emergence Herbicide",
+      "grade": "Imazethapyr 10% SL",
+      "type": "Herbicide",
+      "packaging": "100 ml / 250 ml / 500 ml / 1 L",
+      "composition": [
+        { "label": "Active Ingredient", "value": "Imazethapyr 10% SL" }
+      ],
+      "dose": "400–500 ml per acre in 200 L water, 15–20 days after sowing.",
+      "benefits": "Selective post-emergence herbicide for soybean, gram, groundnut and pulses — controls grassy and broadleaf weeds without damaging the crop."
+    },
+    {
+      "id": 28,
+      "slug": "ggnf-thilem",
+      "name": "GGNF THILEM (Thiamethoxam 12.6% + Lambda Cyhalothrin 9.5% ZC)",
+      "brand": "GGNF",
+      "productType": "pesticides",
+      "category": "crop-protection",
+      "image": "/products/ggnf-thilem.jpg",
+      "subtitle": "Dual-Action Systemic + Contact Insecticide",
+      "grade": "Thiamethoxam 12.6% + Lambda Cyhalothrin 9.5% ZC",
+      "type": "Insecticide",
+      "packaging": "100 ml / 250 ml / 500 ml",
+      "composition": [
+        { "label": "Thiamethoxam", "value": "12.6%" },
+        { "label": "Lambda Cyhalothrin", "value": "9.5%" }
+      ],
+      "dose": "40–50 ml per acre in 200 L water.",
+      "benefits": "Combines systemic (Thiamethoxam) and contact (Lambda Cyhalothrin) action — controls sucking and chewing pests in cotton, paddy, chilli and vegetables."
+    },
+    {
+      "id": 29,
+      "slug": "ggnf-azotix",
+      "name": "GGNF AZOTIX (Azoxystrobin 11% + Tebuconazole 18.3% SC)",
+      "brand": "GGNF",
+      "productType": "pesticides",
+      "category": "crop-protection",
+      "image": "/products/ggnf-azotix.jpg",
+      "subtitle": "Broad-Spectrum Systemic Fungicide",
+      "grade": "Azoxystrobin 11% + Tebuconazole 18.3% SC",
+      "type": "Fungicide",
+      "packaging": "100 ml / 250 ml / 500 ml",
+      "composition": [
+        { "label": "Azoxystrobin", "value": "11%" },
+        { "label": "Tebuconazole", "value": "18.3%" }
+      ],
+      "dose": "200–300 ml per acre in 200 L water.",
+      "benefits": "Dual-mode fungicide — strobilurin + triazole. Controls blast, sheath blight, blight, rust and powdery mildew across paddy, wheat, chilli, vegetables and grape."
+    },
+    {
+      "id": 30,
+      "slug": "ggnf-ema-kill",
+      "name": "GGNF EMA KILL (Emamectin Benzoate 5% SG)",
+      "brand": "GGNF",
+      "productType": "pesticides",
+      "category": "crop-protection",
+      "image": "/products/ggnf-ema-kill.jpg",
+      "subtitle": "Lepidopteran-Specific Insecticide",
+      "grade": "Emamectin Benzoate 5% SG",
+      "type": "Insecticide",
+      "packaging": "100 g / 250 g / 500 g",
+      "composition": [
+        { "label": "Emamectin Benzoate", "value": "5% SG" }
+      ],
+      "dose": "80–100 g per acre in 200 L water.",
+      "benefits": "Highly effective against caterpillars, bollworm, fruit borer, leaf folder, diamondback moth. Standard intervention for cotton bollworm and chilli fruit borer."
+    },
+    {
+      "id": 31,
+      "slug": "ggnf-ggn-mida",
+      "name": "GGNF GGN MIDA (Imidacloprid 30.5% SC)",
+      "brand": "GGNF",
+      "productType": "pesticides",
+      "category": "crop-protection",
+      "image": "/products/ggnf-ggn-mida.jpg",
+      "subtitle": "Systemic Neonicotinoid Insecticide",
+      "grade": "Imidacloprid 30.5% SC",
+      "type": "Insecticide",
+      "packaging": "100 ml / 250 ml / 500 ml",
+      "composition": [
+        { "label": "Imidacloprid", "value": "30.5% SC" }
+      ],
+      "dose": "60–80 ml per acre in 200 L water.",
+      "benefits": "Systemic insecticide highly effective against sucking pests — aphids, whiteflies, jassids, leafhoppers. Long residual control across cotton, paddy, vegetables and pulses."
     }
   ]
 }

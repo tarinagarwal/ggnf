@@ -1,8 +1,10 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { Category, Product } from '@/lib/data';
+import { Category, Product, ProductType, productTypes } from '@/lib/data';
 import { ProductCard } from '@/components/ProductCard';
+
+type Filter = 'all' | ProductType;
 
 export function ProductsClient({
   products,
@@ -11,50 +13,60 @@ export function ProductsClient({
   products: Product[];
   categories: Category[];
 }) {
-  const [active, setActive] = useState<string>('all');
+  const [active, setActive] = useState<Filter>('all');
   const [query, setQuery] = useState('');
+
+  const counts = useMemo(() => {
+    return {
+      all: products.length,
+      ...Object.fromEntries(
+        productTypes.map((t) => [
+          t.value,
+          products.filter((p) => p.productType === t.value).length,
+        ]),
+      ),
+    } as Record<Filter, number>;
+  }, [products]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return products.filter((p) => {
-      const matchCat = active === 'all' || p.category === active;
+      const matchType = active === 'all' || p.productType === active;
       const matchQ =
         !q ||
         p.name.toLowerCase().includes(q) ||
         p.grade.toLowerCase().includes(q) ||
-        p.brand.toLowerCase().includes(q);
-      return matchCat && matchQ;
+        p.brand.toLowerCase().includes(q) ||
+        p.subtitle.toLowerCase().includes(q);
+      return matchType && matchQ;
     });
   }, [active, query, products]);
+
+  const buttons: { value: Filter; label: string }[] = [
+    { value: 'all', label: 'All products' },
+    ...productTypes.map((t) => ({ value: t.value, label: t.label })),
+  ];
 
   return (
     <section className="container-x py-14">
       <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <div className="flex flex-wrap gap-2">
-          <button
-            onClick={() => setActive('all')}
-            className={`rounded-full border px-4 py-2 text-sm transition ${
-              active === 'all'
-                ? 'border-forest-900 bg-forest-900 text-cream-50'
-                : 'border-forest-200/70 text-forest-900 hover:border-forest-500'
-            }`}
-          >
-            All ({products.length})
-          </button>
-          {categories.map((c) => {
-            const count = products.filter((p) => p.category === c.slug).length;
-            const on = active === c.slug;
+          {buttons.map((b) => {
+            const on = active === b.value;
             return (
               <button
-                key={c.slug}
-                onClick={() => setActive(c.slug)}
-                className={`rounded-full border px-4 py-2 text-sm transition ${
+                key={b.value}
+                onClick={() => setActive(b.value)}
+                className={`rounded-full border px-5 py-2.5 text-sm font-medium transition ${
                   on
                     ? 'border-forest-900 bg-forest-900 text-cream-50'
                     : 'border-forest-200/70 text-forest-900 hover:border-forest-500'
                 }`}
               >
-                {c.name} ({count})
+                {b.label}{' '}
+                <span className={on ? 'text-cream-100/70' : 'text-forest-800/50'}>
+                  ({counts[b.value] ?? 0})
+                </span>
               </button>
             );
           })}
@@ -82,6 +94,14 @@ export function ProductsClient({
 
       <p className="mt-6 text-sm text-forest-800/60">
         Showing {filtered.length} of {products.length} products
+        {active !== 'all' && (
+          <>
+            {' '}· filtered to{' '}
+            <span className="font-medium text-forest-900">
+              {productTypes.find((t) => t.value === active)?.label}
+            </span>
+          </>
+        )}
       </p>
 
       <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -94,7 +114,7 @@ export function ProductsClient({
         <div className="mt-20 rounded-2xl border border-dashed border-forest-300/70 p-12 text-center">
           <p className="font-display text-2xl text-forest-900">No products match.</p>
           <p className="mt-2 text-sm text-forest-800/60">
-            Try a different category or clear your search.
+            Try a different filter or clear your search.
           </p>
         </div>
       )}

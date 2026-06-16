@@ -138,8 +138,8 @@ export const cropGuides: CropGuide[] = [
         intro: 'The water-soluble grades that drive the fertigation programme:',
         slugs: [
           'fertisol-npk-19-19-19',
-          'fertisol-npk-13-00-45',
-          'fertisol-zn-edta-12',
+          'fertisol-potassium-nitrate',
+          'fertisol-zn-edta',
           'super-gold-phosphogypsum',
         ],
       },
@@ -162,8 +162,8 @@ export const cropGuides: CropGuide[] = [
     ],
     relatedProductSlugs: [
       'fertisol-npk-19-19-19',
-      'fertisol-npk-13-00-45',
-      'fertisol-zn-edta-12',
+      'fertisol-potassium-nitrate',
+      'fertisol-zn-edta',
       'super-gold-phosphogypsum',
     ],
   },
@@ -282,8 +282,8 @@ export const cropGuides: CropGuide[] = [
         intro: 'The fertigation grades that carry a cotton crop through flowering and boll fill:',
         slugs: [
           'fertisol-npk-19-19-19',
-          'fertisol-npk-13-00-45',
-          'fertisol-zn-edta-12',
+          'fertisol-potassium-nitrate',
+          'fertisol-zn-edta',
         ],
       },
       { type: 'h2', text: 'Bottom line' },
@@ -294,8 +294,8 @@ export const cropGuides: CropGuide[] = [
     ],
     relatedProductSlugs: [
       'fertisol-npk-19-19-19',
-      'fertisol-npk-13-00-45',
-      'fertisol-zn-edta-12',
+      'fertisol-potassium-nitrate',
+      'fertisol-zn-edta',
     ],
   },
   {
@@ -416,8 +416,8 @@ export const cropGuides: CropGuide[] = [
         intro: 'Water-soluble grades for the foliar and irrigation programme:',
         slugs: [
           'fertisol-npk-19-19-19',
-          'fertisol-npk-13-00-45',
-          'fertisol-zn-edta-12',
+          'fertisol-potassium-nitrate',
+          'fertisol-zn-edta',
         ],
       },
       { type: 'h2', text: 'Bottom line' },
@@ -428,8 +428,8 @@ export const cropGuides: CropGuide[] = [
     ],
     relatedProductSlugs: [
       'fertisol-npk-19-19-19',
-      'fertisol-npk-13-00-45',
-      'fertisol-zn-edta-12',
+      'fertisol-potassium-nitrate',
+      'fertisol-zn-edta',
     ],
   },
 ];

@@ -8,8 +8,8 @@ import { cropGuides } from '@/lib/guides';
 
 const featuredSlugs = [
   'fertisol-npk-19-19-19',
-  'fertisol-calcium-nitrate-boron',
-  'fertisol-zn-edta-12',
+  'sampurna-organic-base',
+  'ggnf-azotix',
 ];
 
 const featured = featuredSlugs

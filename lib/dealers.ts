@@ -65,10 +65,10 @@ export const dealers: DealerLocation[] = [
     ],
     recommendedProducts: [
       'fertisol-npk-19-19-19',
-      'fertisol-npk-13-00-45',
-      'fertisol-zn-edta-12',
+      'fertisol-potassium-nitrate',
+      'fertisol-zn-edta',
       'super-gold-phosphogypsum',
-      'sampurna-organic-manure',
+      'sampurna-organic-base',
     ],
     faqs: [
       {
@@ -143,7 +143,7 @@ export const dealers: DealerLocation[] = [
     recommendedProducts: [
       'fertisol-npk-19-19-19',
       'fertisol-npk-13-40-13',
-      'fertisol-zn-edta-12',
+      'fertisol-zn-edta',
       'super-gold-phosphogypsum',
     ],
     faqs: [
@@ -216,8 +216,8 @@ export const dealers: DealerLocation[] = [
     ],
     recommendedProducts: [
       'fertisol-npk-19-19-19',
-      'fertisol-npk-13-00-45',
-      'fertisol-zn-edta-12',
+      'fertisol-potassium-nitrate',
+      'fertisol-zn-edta',
       'fertisol-calcium-nitrate-boron',
     ],
     faqs: [

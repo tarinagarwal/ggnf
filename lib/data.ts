@@ -2,11 +2,20 @@ import data from '@/content.json';
 
 export type Composition = { label: string; value: string };
 
+export type ProductType = 'water-soluble' | 'organic' | 'pesticides';
+
+export const productTypes: { value: ProductType; label: string; description: string }[] = [
+  { value: 'water-soluble', label: 'Water Soluble', description: 'NPK, secondary nutrients, chelates and sulphate fertilizers' },
+  { value: 'organic', label: 'Organic Fertilizer', description: 'Sampurna organic manures and Super Gold soil conditioners' },
+  { value: 'pesticides', label: 'Pesticides', description: 'Insecticides, fungicides and herbicides' },
+];
+
 export type Product = {
   id: number;
   slug: string;
   name: string;
   brand: string;
+  productType: ProductType;
   category: string;
   image: string;
   subtitle: string;

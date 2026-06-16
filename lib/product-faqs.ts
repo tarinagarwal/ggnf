@@ -52,7 +52,7 @@ export const productFaqs: Record<string, FAQ[]> = {
     },
   ],
 
-  'fertisol-npk-13-00-45': [
+  'fertisol-potassium-nitrate': [
     {
       question: 'What is potassium nitrate used for?',
       answer:
@@ -93,7 +93,7 @@ export const productFaqs: Record<string, FAQ[]> = {
     },
   ],
 
-  'fertisol-zn-edta-12': [
+  'fertisol-zn-edta': [
     {
       question: 'What is the difference between zinc sulphate and zinc EDTA?',
       answer:
@@ -154,7 +154,7 @@ export const productFaqs: Record<string, FAQ[]> = {
     },
   ],
 
-  'sampurna-organic-manure': [
+  'sampurna-organic-base': [
     {
       question: 'What is the NPK content of Sampurna organic manure?',
       answer:
