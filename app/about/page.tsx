@@ -101,7 +101,7 @@ export default function AboutPage() {
               <p className="text-[10px] uppercase tracking-widest text-forest-600">Brand 01</p>
               <h3 className="mt-2 font-display text-2xl text-forest-900">Fertisol</h3>
               <p className="mt-2 text-sm text-forest-800/75">
-                Our flagship imported line — 22 variants across water-soluble
+                Our flagship imported line — water-soluble
                 NPK, secondary nutrients, chelated micros, sulphur and specialty
                 formulations.
               </p>

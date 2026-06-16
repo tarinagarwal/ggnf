@@ -5,12 +5,12 @@ import { categories, products } from '@/lib/data';
 export const metadata: Metadata = {
   title: 'All Products — Water-Soluble NPK, Chelated Micronutrients & Organic Fertilizers',
   description:
-    'Browse all 24 imported fertilizer products from Green Gujarat Natural Fertilizer — water-soluble NPK grades, EDTA chelated micronutrients, sulphur, organic manures and soil conditioners.',
+    'Browse our complete catalogue from Green Gujarat Natural Fertilizer — water-soluble NPK grades, EDTA chelated micronutrients, sulphur, organic manures, soil conditioners and crop-protection products.',
   alternates: { canonical: '/products' },
   openGraph: {
     title: 'All Products · Green Gujarat Natural Fertilizer',
     description:
-      'Complete catalogue of 24 imported fertilizers across 7 categories.',
+      'Complete catalogue of fertilizers and crop-protection products across 8 categories.',
     url: 'https://greengujaratnaturalfertilizer.in/products/',
     type: 'website',
   },
@@ -25,7 +25,7 @@ export default function ProductsPage() {
           All products.
         </h1>
         <p className="mt-5 max-w-2xl text-forest-800/75 md:text-lg">
-          24 imports and specialty fertilizers across seven categories. Filter
+          {products.length} imports and specialty products across {categories.length} categories. Filter
           by category or search by name.
         </p>
       </section>

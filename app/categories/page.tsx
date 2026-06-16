@@ -5,7 +5,7 @@ import { categories, products } from '@/lib/data';
 export const metadata: Metadata = {
   title: 'Product Categories — NPK, Micronutrients, Sulphur & Organic Lines',
   description:
-    'Explore all seven fertilizer categories from Green Gujarat Natural Fertilizer — water-soluble NPK, secondary nutrients, potassium, sulphur, micronutrients, chelated micros and organic specialty.',
+    'Explore all eight categories from Green Gujarat Natural Fertilizer — water-soluble NPK, secondary nutrients, potassium, sulphur, micronutrients, chelated micros, organic specialty and crop protection.',
   alternates: { canonical: '/categories' },
   openGraph: {
     title: 'Product Categories · Green Gujarat Natural Fertilizer',

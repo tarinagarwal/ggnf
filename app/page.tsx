@@ -27,7 +27,7 @@ const values = [
   },
   {
     title: 'Full nutrition spectrum',
-    body: '24 products across NPK, secondary nutrients, micro & chelated, sulphur and organic lines.',
+    body: '31 products across NPK, secondary nutrients, chelated micros, sulphur, organic and crop-protection lines.',
   },
   {
     title: 'Farmer-first pricing',
@@ -86,15 +86,15 @@ export default function HomePage() {
               <dl className="mt-14 grid grid-cols-3 gap-6 border-t border-forest-200/60 pt-8 max-w-xl">
                 <div>
                   <dt className="text-xs uppercase tracking-widest text-forest-700/70">Products</dt>
-                  <dd className="mt-1 font-display text-3xl text-forest-900">24</dd>
+                  <dd className="mt-1 font-display text-3xl text-forest-900">{products.length}</dd>
                 </div>
                 <div>
                   <dt className="text-xs uppercase tracking-widest text-forest-700/70">Categories</dt>
-                  <dd className="mt-1 font-display text-3xl text-forest-900">7</dd>
+                  <dd className="mt-1 font-display text-3xl text-forest-900">{categories.length}</dd>
                 </div>
                 <div>
                   <dt className="text-xs uppercase tracking-widest text-forest-700/70">Crops served</dt>
-                  <dd className="mt-1 font-display text-3xl text-forest-900">17+</dd>
+                  <dd className="mt-1 font-display text-3xl text-forest-900">{company.cropsCovered.length}+</dd>
                 </div>
               </dl>
             </Reveal>
@@ -106,7 +106,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 rounded-[2rem] bg-forest-800" />
                 <div className="absolute inset-2 overflow-hidden rounded-[1.75rem] bg-cream-100">
                   <Image
-                    src="/products/product_02.png"
+                    src="/products/fertisol-npk-19-19-19.jpg"
                     alt="Fertisol NPK 19:19:19 — 100% water-soluble balanced NPK fertilizer pack"
                     fill
                     priority
@@ -205,7 +205,7 @@ export default function HomePage() {
               href="/products"
               className="inline-flex items-center gap-2 rounded-full border border-cream-100/30 px-6 py-3 text-sm font-medium hover:bg-cream-50 hover:text-forest-900 transition"
             >
-              View all 24 products <span aria-hidden>→</span>
+              View all {products.length} products <span aria-hidden>→</span>
             </Link>
           </div>
 
