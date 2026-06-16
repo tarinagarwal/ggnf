@@ -374,6 +374,64 @@ export default function HomePage() {
         </section>
       )}
 
+      {/* REGIONAL LEADERSHIP */}
+      <section className="container-x py-24 md:py-32">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:items-center">
+          <div className="md:col-span-5 order-2 md:order-1">
+            <p className="text-xs uppercase tracking-[0.22em] text-forest-700">
+              Regional leadership
+            </p>
+            <h2 className="mt-3 font-display text-4xl leading-tight text-forest-900 md:text-5xl">
+              People who answer the phone.
+            </h2>
+            <p className="mt-6 max-w-xl text-forest-800/75">
+              Behind every bag of Fertisol is a regional head working alongside
+              dealers and farmers — translating soil tests into schedules,
+              walking the field at flowering, picking up the call at 7 PM.
+            </p>
+
+            <div className="mt-10 rounded-2xl border border-forest-200/70 bg-cream-50 p-6">
+              <p className="text-[10px] uppercase tracking-widest text-forest-600">
+                Madhya Pradesh head
+              </p>
+              <h3 className="mt-2 font-display text-2xl text-forest-900">
+                Hemant Saraswat
+              </h3>
+              <p className="mt-2 text-sm text-forest-800/75">
+                Indore · Dewas · Ujjain · Malwa region
+              </p>
+              <a
+                href="tel:+919009079786"
+                className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-forest-700 transition hover:text-forest-900"
+              >
+                +91 90090 79786 <span aria-hidden>↗</span>
+              </a>
+            </div>
+
+            <Link
+              href="/about"
+              className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-forest-700 transition hover:text-forest-900"
+            >
+              Meet the team <span aria-hidden>→</span>
+            </Link>
+          </div>
+
+          <div className="md:col-span-7 order-1 md:order-2">
+            <Reveal>
+              <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-cream-100 border border-forest-200/60 max-w-md mx-auto">
+                <Image
+                  src="/brand/image.png"
+                  alt="Hemant Saraswat — Madhya Pradesh Head, Green Gujarat Natural Fertilizer"
+                  fill
+                  sizes="(min-width: 768px) 50vw, 90vw"
+                  className="object-cover"
+                />
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="container-x pb-24 pt-24">
         <div className="relative overflow-hidden rounded-3xl bg-forest-800 px-8 py-20 text-center md:py-28">

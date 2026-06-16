@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { company, categories } from '@/lib/data';
 
 export const metadata: Metadata = {
@@ -120,6 +121,53 @@ export default function AboutPage() {
                 Phosphogypsum soil conditioner for saline and alkaline fields —
                 calcium, sulphur, magnesium and phosphorus in one bag.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="container-x py-24">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:items-center">
+          <div className="md:col-span-5">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-cream-100 border border-forest-200/60">
+              <Image
+                src="/brand/image.png"
+                alt="Hemant Saraswat — Madhya Pradesh Head, Green Gujarat Natural Fertilizer"
+                fill
+                sizes="(min-width: 768px) 40vw, 90vw"
+                className="object-cover"
+              />
+            </div>
+          </div>
+          <div className="md:col-span-7">
+            <p className="text-xs uppercase tracking-[0.22em] text-forest-700">
+              Regional leadership
+            </p>
+            <h2 className="mt-3 font-display text-4xl leading-tight text-forest-900 md:text-5xl">
+              On the ground, wherever you are.
+            </h2>
+            <p className="mt-6 max-w-xl text-forest-800/75">
+              Our regional heads work directly with dealers and farmers — from
+              soil-test interpretation to scheduling fertigation programmes for
+              the season ahead. Every district served, every call answered.
+            </p>
+
+            <div className="mt-10 max-w-md rounded-3xl border border-forest-200/70 bg-cream-50 p-6">
+              <p className="text-[10px] uppercase tracking-widest text-forest-600">
+                Madhya Pradesh head
+              </p>
+              <h3 className="mt-2 font-display text-2xl text-forest-900">
+                Hemant Saraswat
+              </h3>
+              <p className="mt-2 text-sm text-forest-800/75">
+                Regional lead for Indore, Dewas, Ujjain and the Malwa region.
+              </p>
+              <a
+                href="tel:+919009079786"
+                className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-forest-700 transition hover:text-forest-900"
+              >
+                +91 90090 79786 <span aria-hidden>↗</span>
+              </a>
             </div>
           </div>
         </div>
